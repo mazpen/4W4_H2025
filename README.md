@@ -3,5 +3,5 @@
 ## Reproduction d'une maquette pour réaliser la page d'accueil
 L'intégration est réalisée avec Sass et le standard BEM
 
-
-git hub page: https://mazpen.github.io/4W4_H2025/
+## liens a ma page GitHub
+https://mazpen.github.io/4W4_H2025/
