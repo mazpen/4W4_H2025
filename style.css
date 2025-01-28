@@ -17,16 +17,19 @@ Les Variables
 /* /////////////////////////
 Les composants
 /////////////////////////// */
-.menu ul {
+/* // menu principal // */
+.menu {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
-.menu ul li {
+.menu__li {
   display: inline-block;
 }
-.menu ul li a {
+.menu__a {
   color: #333;
   text-decoration: none;
+  padding: 2px 5px;
 }
 
 /* *******************
@@ -68,4 +71,42 @@ Le composant .carte
 }
 .carte__bouton:hover {
   background-color: #0056b3;
+}
+
+.recherche {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.recherche__input {
+  padding: 2px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.recherche__input__:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.recherche_img {
+  padding: 2px;
+}
+
+/* /////////////////////////
+Layout 
+/////////////////////////// */
+.global {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("images/maldives.jpg");
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entete__nav {
+  display: flex;
 }
