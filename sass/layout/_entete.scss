@@ -5,6 +5,17 @@
 
     &__nav {
         display: flex;
+        
+        @media screen and (max-width:$point_rupture){
+            flex-direction: column;
+            
+        }
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px;
+
 
     }
 }
