@@ -142,6 +142,9 @@ Layout
   justify-content: space-between;
   align-items: center;
 }
+.entete__logo {
+  z-index: 5;
+}
 .entete__nav {
   display: flex;
   justify-content: flex-end;

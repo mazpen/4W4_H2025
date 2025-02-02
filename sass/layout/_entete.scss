@@ -20,6 +20,9 @@
     justify-content: space-between;
     align-items: center;    
 
+    &__logo{
+        z-index: 5;
+    }
     &__nav {
         display: flex;
         justify-content: flex-end;
