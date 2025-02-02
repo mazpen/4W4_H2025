@@ -17,17 +17,23 @@ Les Variables
 /* /////////////////////////
 Les composants
 /////////////////////////// */
-/* // menu principal // */
+/* menu principal */
 .menu {
+  flex: 1 1 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+@media screen and (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    gap: 6px 0;
+  }
+}
 .menu__a {
-  color: #333;
-  text-decoration: none;
   padding: 2px 5px;
 }
 
@@ -41,6 +47,9 @@ Le composant .carte
 }
 .carte--grande {
   padding: 40px;
+}
+.carte--petite {
+  padding: 20px;
 }
 .carte__image img {
   max-width: 100%;
@@ -73,23 +82,25 @@ Le composant .carte
 }
 
 .recherche {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
   align-items: center;
   font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .recherche__input {
-  padding: 2px;
+  flex: 1;
+  height: 1.8rem;
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.02);
-  border-right: 1px dotted rgba(0, 0, 0, 0.1);
+  border-right: 1px dotted rgba(0, 0, 0, 0.2);
 }
-.recherche__input__:hover {
+.recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
-.recherche_img {
-  padding: 0 3px;
+.recherche__img {
   flex: 0 0 20px;
+  padding: 0 3px;
 }
 
 /* /////////////////////////
@@ -105,6 +116,27 @@ Layout
   background-image: url("images/maldives.jpg");
 }
 
+.burger {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger:checked ~ .entete__nav {
+  display: flex;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
@@ -112,7 +144,24 @@ Layout
 }
 .entete__nav {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  position: static;
+  flex-direction: row;
   align-items: center;
-  gap: 4px;
+  gap: 0 40px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 700px) {
+  .entete__nav {
+    display: none;
+    flex-direction: column;
+    height: 52vh;
+    width: 100vw;
+    padding-bottom: 20px;
+    gap: 30px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+  }
 }

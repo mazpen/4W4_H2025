@@ -1,6 +1,6 @@
 .burger{
     display : none;
-    @media screen and (max-width:$point__rupture) {
+    @media screen and (max-width: $point__rupture) {
         display : block;
         position : absolute;
         top: 10px;
@@ -15,19 +15,17 @@
     display: flex;
 }
 
-
 .entete{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: center;    
 
     &__nav {
         display: flex;
         justify-content: flex-end;
         position : static;
 
-        @media screen and (max-width:$point__rupture) {
+        @media screen and (max-width: $point__rupture) {
             display : none;
             flex-direction: column;
             height: 52vh;
