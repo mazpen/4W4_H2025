@@ -1,15 +1,16 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 - Azpen Sbrizzi
+Theme Name: club-voyage
 Theme URI: https://wordpress.org/themes/4W4 - Azpen Sbrizzi/
 Author: Azpen Sbrizzi
 Author URI: https://github.com/mazpen
-Description: Thème de base développer dans le cadre du cours 4W4
-Version: 1.3
-Tested up to: 5.4
+Description: Thème de base développer dans le cadre du cours de Worpress
+Version: 1.0
+Tested up to: 6.2
+Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-azpensbrizzi
+Text Domain: club-voyage
 */
 /* /////////////////////
 Les Variables
