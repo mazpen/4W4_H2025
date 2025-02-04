@@ -52,8 +52,15 @@ Le composant .carte
   padding: 20px;
 }
 .carte__image img {
-  max-width: 100%;
+  width: 250px;
   border-radius: 8px;
+  flex-direction: row;
+}
+@media screen and (max-width: 700px) {
+  .carte__image img {
+    flex-direction: column;
+    width: 100px;
+  }
 }
 .carte__contenu {
   margin-top: 15px;

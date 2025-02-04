@@ -15,8 +15,13 @@ Le composant .carte
     padding: 20px;
   }
   &__image img {
-    max-width: 100%;
+    width: 250px;
     border-radius: 8px;
+    flex-direction: row;
+    @media screen and (max-width:$point__rupture) {
+      flex-direction: column;
+      width: 100px;
+    }
   }
 
   &__contenu {
@@ -49,4 +54,6 @@ Le composant .carte
       background-color: #0056b3;
     }
   }
+
+  
 }
