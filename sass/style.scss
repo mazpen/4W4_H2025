@@ -14,12 +14,14 @@ Text Domain: 4w4-azpensbrizzi
 Les Variables
 //////////////////////// */
 @import "variables/couleurs";
+@import "variables/dimensions";
 
 /* /////////////////////////
 Les composants
 /////////////////////////// */
 @import "composants/menu";
 @import "composants/carte";
+@import "composants/recherche"; 
 
 /* /////////////////////////
 Layout 

@@ -11,7 +11,9 @@ Le composant .carte
   &--grande {
     padding: 40px;
   }
-
+  &--petite {
+    padding: 20px;
+  }
   &__image img {
     max-width: 100%;
     border-radius: 8px;
