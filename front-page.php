@@ -1,8 +1,9 @@
 <?php get_header() ?>
+<h1>front-page.php</h1>
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-                Club de voyage
+                <?php echo bloginfo('name'); ?>
             </h1>
             <p class="hero__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
