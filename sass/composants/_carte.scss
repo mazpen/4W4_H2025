@@ -6,7 +6,8 @@ Le composant .carte
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  
+  display: flex;
+  margin: auto;
 
   &--grande {
     padding: 40px;
@@ -15,8 +16,18 @@ Le composant .carte
     padding: 20px;
   }
   &__image img {
-    max-width: 100%;
-    border-radius: 8px;
+    width: 250px;
+    border-radius: 10px;
+    flex-direction: row;
+    margin: auto;
+    padding: 5px;
+    @media screen and (max-width: $point__rupture) 
+    {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      align-items: center;
+    }
   }
 
   &__contenu {
@@ -49,4 +60,6 @@ Le composant .carte
       background-color: #0056b3;
     }
   }
+
+  
 }

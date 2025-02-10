@@ -3,7 +3,7 @@
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-                <?php echo bloginfo('name'); ?>
+                <?php  bloginfo('name'); ?>
             </h1>
             <p class="hero__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
@@ -31,7 +31,7 @@
     <section class="promotion">
         <div class="carte carte--grande">
             <figure class="carte__image">
-                <img src="images/img1.jpg" alt="Image de voyage">
+                <img src="/images/img1.jpg" alt="Image de voyage">
             </figure>
             <div class="carte__contenu">
                 <h2 class="carte__titre">Destination de rêve</h2>
