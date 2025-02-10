@@ -44,6 +44,8 @@ Le composant .carte
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
+  display: flex;
+  margin: auto;
 }
 .carte--grande {
   padding: 40px;
@@ -53,13 +55,17 @@ Le composant .carte
 }
 .carte__image img {
   width: 250px;
-  border-radius: 8px;
+  border-radius: 10px;
   flex-direction: row;
+  margin: auto;
+  padding: 5px;
 }
 @media screen and (max-width: 700px) {
   .carte__image img {
+    display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 300px;
+    align-items: center;
   }
 }
 .carte__contenu {
