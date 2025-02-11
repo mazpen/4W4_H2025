@@ -1,5 +1,5 @@
 <?php
-//permet d<afficher le contenu de la page d'accueil
+//permet d'afficher le contenu de la page d'accueil
 
 ?>
 
@@ -35,21 +35,24 @@
  
     <section class="populaire">
         <div class="boiteflex global">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <?php if(in_category('galerie')){
-                the_content();
-            }else{ ?>
+            <?php 
+            if (have_posts()) : while (have_posts()) : the_post(); 
+            ?>
+            <?php 
+            if(in_category('galerie'))
+            { 
+                the_content(); 
+            } else { ?>
 
-            <div class="carte carte--grande">
-            <figure class="carte__image">
-                <img src="/images/img1.jpg" alt="Image de voyage">
-            </figure>
-            <div class="carte__contenu">
-                <h2 class="carte__titre"><?php the_title(); ?></h2>
-                <p class="carte__description"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></p>
-                <button class="carte__bouton carte__bouton--actif">Suite</button>
-            </div>
-            </article>
+                <div class="carte carte--grande">
+                <figure class="carte__image">
+                    <img src="img1.jpg" alt="Image de voyage">
+                </figure>
+                <div class="carte__contenu">
+                    <h2 class="carte__titre"><?php the_title(); ?></h2>
+                    <p class="carte__description"><?php  echo wp_trim_words(get_the_content(), 20, "...") ; ?></p>
+                    <button class="carte__bouton carte__bouton--actif">Suite</button>
+                </div>
             <?php } ?>
             <?php endwhile; endif; ?>
         </div>
