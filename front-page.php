@@ -33,24 +33,18 @@
         </figure>
     </section>
  
-    <section class="promotion">
-        <div class="carte carte--grande">
+    <section class="populaire">
+        <div class="boiteflex global">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="carte carte--grande">
             <figure class="carte__image">
                 <img src="/images/img1.jpg" alt="Image de voyage">
             </figure>
             <div class="carte__contenu">
-                <h2 class="carte__titre">Destination de rêve</h2>
-                <p class="carte__description">Découvrez des endroits magnifiques à travers le monde.</p>
-                <button class="carte__bouton carte__bouton--actif">Réserver</button>
+                <h2 class="carte__titre"><?php the_title(); ?></h2>
+                <p class="carte__description"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></p>
+                <button class="carte__bouton carte__bouton--actif">Suite</button>
             </div>
-        </div>
-    </section>
-    <section class="populaire">
-        <div class="global">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article class="populaire__article">
-                <h2 class="populaire__titre"><?php the_title(); ?></h2>
-                <div class="populaire__contenu"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></div>
             </article>
             <?php endwhile; endif; ?>
         </div>
