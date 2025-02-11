@@ -1,3 +1,8 @@
+<?php
+//permet d<afficher le contenu de la page d'accueil
+
+?>
+
 <?php get_header() ?>
 <h1>front-page.php</h1>
     <section class="hero">

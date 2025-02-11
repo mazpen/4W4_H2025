@@ -22,27 +22,33 @@
             <div class="entete__nav">
                 <nav class="entete__menu">
                     <ul class="menu">
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Aventure</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
+                    <li class="menu__li">
+            <a class="menu__a" href="#">Pleine Nature</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="#">Croisière</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="#">Aventure</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="#">Culturel</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a"  href="#">Repos</a>
+                </li>
+                <li class="menu__li">
+                    <a  class="menu__a" href="#">Zen</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="#">Économique</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="#">Favorit</a>
+                </li>
+                <li>
+                    <a class="menu__a" href="#">Pays</a>
+                </li>
                     </ul>
                 </nav>
                 <div class="entete__recherche">

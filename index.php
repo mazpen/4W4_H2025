@@ -1,3 +1,8 @@
+<?php
+//index.php est le modele par defaut
+//si aucun model peut satisfere la requete http, c'est index.php qui affichera le contenu de la page
+?>
+
 <?php get_header() ?>
     <section class="hero">
         <div class="hero__contenu global">
