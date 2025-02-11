@@ -51,8 +51,8 @@
                 <h2 class="populaire__titre"><?php the_title(); ?></h2>
                 <div class="populaire__contenu"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></div>
             </article>
-            <?php endwhile; endif; ?>
-        </div>
+         </div>    <?php endwhile; endif; ?>
+       
     </section>
     <?php get_footer(); ?>
 </body>

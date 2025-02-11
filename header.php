@@ -20,6 +20,13 @@
             </label>
             <input type="checkbox" id="chk__burger" class="chk__burger">
             <div class="entete__nav">
+
+                <?php wp_nav_menu(array(
+                    'menu' => 'principal',
+                    'container' => 'nav',
+                    'container_class' => 'entete__menu',
+                ));?>
+
                 <nav class="entete__menu">
                     <ul class="menu">
                     <li class="menu__li">

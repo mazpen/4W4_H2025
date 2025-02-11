@@ -36,6 +36,10 @@
     <section class="populaire">
         <div class="boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if(in_category('galerie')){
+                the_content();
+            }else{ ?>
+
             <div class="carte carte--grande">
             <figure class="carte__image">
                 <img src="/images/img1.jpg" alt="Image de voyage">
@@ -46,6 +50,7 @@
                 <button class="carte__bouton carte__bouton--actif">Suite</button>
             </div>
             </article>
+            <?php } ?>
             <?php endwhile; endif; ?>
         </div>
     </section>
