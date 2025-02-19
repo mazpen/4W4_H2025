@@ -11,7 +11,7 @@
                 <?php  bloginfo('name'); ?>
             </h1>
             <p class="hero__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
+            <?php  bloginfo('description'); ?>
             </p>
             <a href="" class="hero__courriel">
                 info@cmaisonneuve.qc.ca
@@ -35,24 +35,20 @@
  
     <section class="populaire">
         <div class="boiteflex global">
-            <?php 
-            if (have_posts()) : while (have_posts()) : the_post(); 
-            ?>
-            <?php 
-            if(in_category('galerie'))
-            { 
-                the_content(); 
-            } else { ?>
-
-                <div class="carte carte--grande">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (in_category('galerie')){
+                the_content();
+            } else { ?>         
+            <article class="carte carte--grande">
                 <figure class="carte__image">
-                    <img src="img1.jpg" alt="Image de voyage">
+                    <img src="images/img1.jpg" alt="Image de voyage">
                 </figure>
                 <div class="carte__contenu">
                     <h2 class="carte__titre"><?php the_title(); ?></h2>
-                    <p class="carte__description"><?php  echo wp_trim_words(get_the_content(), 20, "...") ; ?></p>
+                    <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
                     <button class="carte__bouton carte__bouton--actif">Suite</button>
                 </div>
+            </article>
             <?php } ?>
             <?php endwhile; endif; ?>
         </div>
