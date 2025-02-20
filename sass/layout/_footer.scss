@@ -1,48 +1,68 @@
 /*
-  -- Layout du pied de page --
+  --------------------------------- Layout du pied de page
 */
 
 footer{
     background-color: rgb(236, 136, 13);
     color : #000;
+    display: flex;
   }
-
+  
 .piedpage{
     display: flex;
-    flex-direction: row;
-    &__s1{
-        &__lien{
-            color: #000dff;
-        }
-    }
-    &__s2{
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    @media screen and (max-width: $point__rupture){
         display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        &__externe {
-            flex : 0 0 20%;
-            & .menu {
-                display : flex;
-                flex-direction: column;
+        flex-direction: row;
+
+        &__s1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;      
+        
+            &__adresse{
+                flex : 0 0 40%;
             }
-
-
+            &__description{
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
+
+    }
+    &__s1{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 3rem;      
+    
         &__adresse{
             flex : 0 0 40%;
-            &__coord{
-
-            }
-            &__recherche{
-            align-self: flex-end;
-            }
+            &__coord{}
+            &__recherche{}
         }
-    }
-    &__s3{
         &__description{
-        flex:1 0 400px;
+        display: flex;
+            flex:1 0 400px;
+            flex-wrap: wrap;
         }
     }
 
-    
-}
+    &__s2{
+        &__externe {
+            display: flex;
+            flex : 0 0 20%;
+            padding-top: 50px;
+            justify-content: center;
+
+            & .menu { //ul
+                display : flex;
+                flex-direction: row;
+            }
+        }
+    }
+  }
+  
