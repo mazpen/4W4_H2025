@@ -1,35 +1,48 @@
 /*
-  --------------------------------- Layout du pied de page
+  -- Layout du pied de page --
 */
 
 footer{
     background-color: rgb(236, 136, 13);
     color : #000;
   }
-  
-  .piedpage{
-      display: flex;
-      flex-direction: column;
-      &__s1{
-          display: flex;
-          flex-wrap: wrap;
-          gap: 3rem;
-          &__externe {
-              flex : 0 0 20%;
-              & .menu { //ul
-                  display : flex;
-                  flex-direction: column;
-              }
-  
-  
-          }
-          &__adresse{
-              flex : 0 0 40%;
-              &__coord{}
-              &__recherche{}
-          }
-          &__description{
-              flex:1 0 400px;
-          }
-      }
-  }
+
+.piedpage{
+    display: flex;
+    flex-direction: row;
+    &__s1{
+        &__lien{
+            color: #000dff;
+        }
+    }
+    &__s2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        &__externe {
+            flex : 0 0 20%;
+            & .menu {
+                display : flex;
+                flex-direction: column;
+            }
+
+
+        }
+        &__adresse{
+            flex : 0 0 40%;
+            &__coord{
+
+            }
+            &__recherche{
+            align-self: flex-end;
+            }
+        }
+    }
+    &__s3{
+        &__description{
+        flex:1 0 400px;
+        }
+    }
+
+    
+}

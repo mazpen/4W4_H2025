@@ -44,6 +44,7 @@ Les composants
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 10px 0;
 }
 @media screen and (max-width: 700px) {
   .menu {
@@ -51,8 +52,9 @@ Les composants
     gap: 6px 0;
   }
 }
-.menu__a {
-  padding: 2px 5px;
+.menu-item a {
+  text-decoration: none;
+  padding: 4px;
 }
 
 /* *******************
@@ -62,7 +64,9 @@ Le composant .carte
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 250px;
+  display: flex;
+  margin: auto;
+  flex: 1 1 220px;
 }
 .carte--grande {
   padding: 40px;
@@ -202,4 +206,41 @@ Layout
     right: 0;
     background-color: #fff;
   }
+}
+
+/*
+  -- Layout du pied de page --
+*/
+footer {
+  background-color: rgb(236, 136, 13);
+  color: #000;
+}
+
+.piedpage {
+  display: flex;
+  flex-direction: row;
+}
+.piedpage__s1__lien {
+  color: #000dff;
+}
+.piedpage__s2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.piedpage__s2__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s2__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s2__adresse {
+  flex: 0 0 40%;
+}
+.piedpage__s2__adresse__recherche {
+  align-self: flex-end;
+}
+.piedpage__s3__description {
+  flex: 1 0 400px;
 }
