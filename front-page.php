@@ -4,7 +4,7 @@
 ?>
 
 <?php get_header() ?>
-<h1>front-page.php</h1>
+<h1></h1>
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
@@ -32,7 +32,6 @@
             <img src="" alt="">
         </figure>
     </section>
- 
     <section class="populaire">
         <div class="boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -44,9 +43,13 @@
                     <img src="images/img1.jpg" alt="Image de voyage">
                 </figure>
                 <div class="carte__contenu">
+                <?php
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('thumbnail'); }
+                    ?>
                     <h2 class="carte__titre"><?php the_title(); ?></h2>
                     <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
-                    <button class="carte__bouton carte__bouton--actif">Suite</button>
+                    <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Suite</a>
                 </div>
             </article>
             <?php } ?>

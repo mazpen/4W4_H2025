@@ -215,12 +215,34 @@ Layout
 footer {
   background-color: rgb(236, 136, 13);
   color: #000;
+  display: flex;
 }
 
 .piedpage {
   display: flex;
+  padding: 30px;
   flex-direction: column;
-  padding: 50px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .piedpage {
+    display: flex;
+    flex-direction: row;
+  }
+  .piedpage__s1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .piedpage__s1__adresse {
+    flex: 0 0 40%;
+  }
+  .piedpage__s1__description {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .piedpage__s1 {
   display: flex;
