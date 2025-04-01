@@ -12,12 +12,12 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: club-voyage
 */
-/* /////////////////////
-Les Variables
-//////////////////////// */
-/* /////////////////////
-Base
-//////////////////////// */
+/* /////////////////////////////////
+Les variables
+//////////////////////////////////// */
+/* /////////////////////////////////
+Les balise de bases
+//////////////////////////////////// */
 a {
   color: #5d5;
   text-decoration: none;
@@ -32,9 +32,9 @@ a:focus {
   color: rgba(0, 0, 0, 0.4);
 }
 
-/* /////////////////////////
+/* /////////////////////////////////
 Les composants
-/////////////////////////// */
+//////////////////////////////////// */
 /* menu principal */
 .menu {
   flex: 1 1 50%;
@@ -55,6 +55,28 @@ Les composants
 .menu-item a {
   text-decoration: none;
   padding: 4px;
+}
+
+.recherche {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.recherche__input {
+  flex: 1;
+  height: 1.8rem;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-right: 1px dotted rgba(0, 0, 0, 0.2);
+}
+.recherche__input:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.recherche__img {
+  flex: 0 0 20px;
+  padding: 0 3px;
 }
 
 /* *******************
@@ -115,47 +137,9 @@ Le composant .carte
   background-color: #0056b3;
 }
 
-.recherche {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.recherche__input {
-  flex: 1;
-  height: 1.8rem;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.02);
-  border-right: 1px dotted rgba(0, 0, 0, 0.2);
-}
-.recherche__input:hover {
-  background-color: rgba(0, 0, 0, 0.06);
-}
-.recherche__img {
-  flex: 0 0 20px;
-  padding: 0 3px;
-}
-
-/* /////////////////////////
-Layout 
-/////////////////////////// */
-.global {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 10vh 5vw;
-}
-
-.hero {
-  min-height: 100vh;
-  background-image: url("images/maldives.jpg");
-}
-
-.boiteflex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
+/* /////////////////////////////////
+Les layouts
+//////////////////////////////////// */
 .burger {
   display: none;
 }
@@ -209,6 +193,19 @@ Layout
   }
 }
 
+.hero {
+  background-image: url("images/maldives.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hero__icone {
+  display: flex;
+  gap: 15px;
+}
+
 /*
   --------------------------------- Layout du pied de page
 */
@@ -252,6 +249,9 @@ footer {
 .piedpage__s1__adresse {
   flex: 0 0 40%;
 }
+.piedpage__s1__adresse__recherche {
+  size: 100px;
+}
 .piedpage__s1__description {
   display: flex;
   flex: 1 0 400px;
@@ -266,4 +266,85 @@ footer {
 .piedpage__s2__externe .menu {
   display: flex;
   flex-direction: row;
+}
+
+.global {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10vh 5vw;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("images/maldives.jpg");
+}
+
+.boiteflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.erreur404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/ilepalmier.jpg");
+  background-position: center;
+}
+.erreur404_titre {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.21);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.erreur404_texte {
+  font-size: 1.2rem;
+  width: 70%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.21);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.erreur404_menu .menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  background-color: gold;
+  text-decoration-color: black;
+}
+@media screen and (max-width: 800px) {
+  .erreur404_menu .menu {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 2rem;
+  }
+}
+.erreur404_recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-decoration-color: gold;
+  text-decoration: underline;
+}
+.erreur404 .bouton_acceuil {
+  font-size: 25px;
+  background-color: rgb(86, 132, 232);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.erreur404 .bouton_acceuil a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.erreur404 .bouton_acceuil:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+.erreur404 .bouton_acceuil:hover a {
+  color: black;
 }

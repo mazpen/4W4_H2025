@@ -16,9 +16,9 @@
 
   <div class="erreur404_menu menu"> 
     <?php wp_nav_menu(array(
-                      'menu' => 'erreur_404',
-                      'container' => 'nav',
-                      'container_class' => 'erreur_404_menu'
+      'menu' => 'erreur_404',
+      'container' => 'nav',
+      'container_class' => 'erreur_404_menu'
     )); ?>
   </div>
 
