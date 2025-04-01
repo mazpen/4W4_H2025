@@ -1,0 +1,72 @@
+.erreur_404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    // Ajoutez une image de fond
+    background-image: url("images/ilepalmier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 80vh;
+  
+    &_titre {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.21);
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  
+    &_texte {
+      font-size: 1.2rem;
+      width: 70%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.21);
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  
+    &_menu {
+      .menu  {// ul
+        display : flex;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            gap: 40px;
+            padding-bottom: 2rem;
+        }
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        padding: 0;
+        padding-top: 2rem;
+        margin: 0;
+        gap : 20px;
+        }
+
+    }
+
+  
+  .bouton_acceuil {
+    font-size: 25px;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; // Ajout de la transition
+  
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease; // Transition pour la couleur du texte
+    }
+  
+    &:hover {
+      background-color: white;
+      transform: scale(1.05); // Légère mise en avant au survol
+    }
+  
+    &:hover a {
+      color: black;
+    }
+  }
+}
