@@ -42,7 +42,9 @@ footer{
         &__adresse{
             flex : 0 0 40%;
             //&__coord{}
-            //&__recherche{}
+            &__recherche{
+                size: 100px;
+            }
         }
         &__description{
         display: flex;
