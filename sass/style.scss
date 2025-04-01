@@ -15,11 +15,13 @@ Text Domain: club-voyage
 Les variables
 //////////////////////////////////// */
 @import "variables/couleurs";
+@import "variables/dimensions";
 
 /* /////////////////////////////////
 Les balise de bases
 //////////////////////////////////// */
 @import "base/simple";
+@import "base/lien";
 
 /* /////////////////////////////////
 Les composants
@@ -27,6 +29,7 @@ Les composants
 @import "composants/menu";
 @import "composants/recherche";
 @import "composants/carte";
+@import "composants/galerie";
 
 /* /////////////////////////////////
 Les layouts
@@ -36,3 +39,5 @@ Les layouts
 @import "layout/galerie";
 @import "layout/hero";
 @import "layout/footer";
+@import "layout/principal";
+@import "layout/404";
