@@ -1,13 +1,14 @@
-.global {
-    margin : 0 auto;
-    max-width: 1000px;
+.global{
+    max-width: 1100px;
     padding: 10vh 5vw;
- }
+    
+}
+
+.populaire .global {
+    display: flex;
+    flex-wrap: wrap;
+}
  
-.hero{
-     min-height: 100vh;
-     background-image: url("images/maldives.jpg");
- }
 
 .boiteflex{
     display: flex;

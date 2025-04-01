@@ -11,27 +11,28 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: club-voyage
 */
-/* /////////////////////
-Les Variables
-//////////////////////// */
+/* /////////////////////////////////
+Les variables
+//////////////////////////////////// */
 @import "variables/couleurs";
-@import "variables/dimensions";
 
-/* /////////////////////
-Base
-//////////////////////// */
+/* /////////////////////////////////
+Les balise de bases
+//////////////////////////////////// */
 @import "base/simple";
-@import "base/lien";
-/* /////////////////////////
-Les composants
-/////////////////////////// */
-@import "composants/menu";
-@import "composants/carte";
-@import "composants/recherche";
 
-/* /////////////////////////
-Layout 
-/////////////////////////// */
-@import "layout/principal";
+/* /////////////////////////////////
+Les composants
+//////////////////////////////////// */
+@import "composants/menu";
+@import "composants/recherche";
+@import "composants/carte";
+
+/* /////////////////////////////////
+Les layouts
+//////////////////////////////////// */
+@import "layout/general";
 @import "layout/entete";
+@import "layout/galerie";
+@import "layout/hero";
 @import "layout/footer";
