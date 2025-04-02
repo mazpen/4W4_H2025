@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-<section class="erreur404" style="background-image: url(<?php echo $erreur404_background ?>">
+
+<?php 
+$erreur404_background = get_theme_mod("erreur_background","Default Title"); ?>
+
+<section class="erreur404" style="background-image: url(<?php echo $erreur404_background ?>)";>
   <div>
   <p class="erreur404_titre">
   Oops, vous avez échoué sur l'île 404 !

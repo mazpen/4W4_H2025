@@ -29,6 +29,17 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
   'section' => 'hero_section',
 )));
 
+$wp_customize->add_section('section_erreur', array(
+  'title' => __('Section 404', 'theme_tp'),
+  'priority' => 30,));
+
+$wp_customize->add_setting('erreur_background', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',));
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur_background', array(
+  'label' => __('Image en arrière plan', 'theme_tp'),
+  'section' => 'section_erreur',
+)));
 
 }
 

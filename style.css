@@ -289,7 +289,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("images/ilepalmier.jpg");
   background-position: center;
 }
 .erreur404_titre {
