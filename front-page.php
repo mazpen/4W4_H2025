@@ -25,6 +25,8 @@
         </div>
     </section>
 
+
+
     <section class="populaire">
         <div class="global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); 
@@ -36,7 +38,15 @@
             <?php endwhile; endif; ?>
         </div>
     </section>
-    <footer></footer>
+    
+    <!--// Section REST-API //-->
+    <section class="destination">
+        <h2 class="destination__titre">Articles de la catégorie</h2>
+        <div class="destination__list"></div>
+    </section>
+
+
+
     <?php get_footer(); ?>
 </body>
 </html>
