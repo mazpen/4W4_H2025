@@ -13,7 +13,7 @@ $erreur404_background = get_theme_mod("erreur_background","Default Title"); ?>
   </p>
 
 </div>
-  <p class="erreur404 bouton_acceuil">
+  <p class="erreur404_bouton-acceuil">
     <!-- Bouton accueil -->
     <a href="<?php echo home_url(); ?>">Revenir à l'accueil</a> 
   </p>

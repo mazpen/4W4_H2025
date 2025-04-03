@@ -292,29 +292,68 @@ footer {
   background-position: center;
 }
 .erreur404_titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.21);
+  font-size: 70px;
+  font-weight: bold;
+  background-color: rgb(255, 0, 0);
   padding: 1rem;
   border-radius: 1rem;
 }
 .erreur404_texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 1.2rem;
   width: 70%;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.21);
+  background-color: seagreen;
   padding: 1rem;
   border-radius: 1rem;
+}
+.erreur404_bouton-acceuil {
+  font-size: 25px;
+  background-color: rgb(0, 81, 255);
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.erreur404_bouton-acceuil a {
+  background-color: salmon;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.erreur404_bouton-acceuil:hover {
+  background-color: aquamarine;
+  transform: scale(1.05);
+}
+.erreur404_bouton-acceuil:hover a {
+  color: black;
 }
 .erreur404_menu .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   align-items: center;
-  background-color: gold;
+  background-color: rgb(0, 255, 68);
   text-decoration-color: black;
 }
+.erreur404_menu .menu .error-404__link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073aa;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.erreur404_menu .menu .error-404__link--home:hover {
+  background-color: #005d87;
+}
 @media screen and (max-width: 800px) {
-  .erreur404_menu .menu {
+  .erreur404_menu {
     flex-direction: column;
     gap: 40px;
     padding-bottom: 2rem;
@@ -327,23 +366,4 @@ footer {
   margin-top: 2rem;
   text-decoration-color: gold;
   text-decoration: underline;
-}
-.erreur404 .bouton_acceuil {
-  font-size: 25px;
-  background-color: rgb(86, 132, 232);
-  padding: 1rem;
-  border-radius: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.erreur404 .bouton_acceuil a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
-}
-.erreur404 .bouton_acceuil:hover {
-  background-color: white;
-  transform: scale(1.05);
-}
-.erreur404 .bouton_acceuil:hover a {
-  color: black;
 }

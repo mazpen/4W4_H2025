@@ -1,70 +1,53 @@
 .erreur404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // Ajoutez une image de fond
+  background-position: center;
+
+  &_titre {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-
-    // Ajoutez une image de fond
-    background-position: center;
-  
-    &_titre {
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.21);
-      padding: 1rem;
-      border-radius: 1rem;
-    }
-  
-    &_texte {
-      font-size: 1.2rem;
-      width: 70%;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.21);
-      padding: 1rem;
-      border-radius: 1rem;
-    }
-  
-    &_menu {
-      .menu  {// ul
-        display : flex;
-        @media screen and (max-width: 800px) {
-            flex-direction: column;
-            gap: 40px;
-            padding-bottom: 2rem;
-        }
-        flex-direction: row;
-        list-style-type: none;
-        align-items: center;
-        background-color: gold;
-        text-decoration-color: black;
-        }
-
-    }
-
-    &_recherche {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-      text-decoration-color: gold;
-      text-decoration: underline;
-    }
-
-  
-  .bouton_acceuil {
-    font-size: 25px;
-    background-color: rgb(86, 132, 232);
+    align-items: center;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
     padding: 1rem;
     border-radius: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease; // Ajout de la transition
+  }
+
+  &_texte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 70%;    
+    //background-color: rgba(255, 255, 255, 0.21);
+    background-color: seagreen;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  &_bouton-acceuil {
+    font-size: 25px;
+    background-color: rgb(0, 81, 255);
+    margin-top: 20px;
+    padding: 1rem;
+    border-radius: 1rem;
   
     a {
+      background-color: salmon;
       text-decoration: none;
       color: white;
       transition: color 0.3s ease; // Transition pour la couleur du texte
     }
   
     &:hover {
-      background-color: white;
+      background-color: aquamarine;
+      //background-color: white;
       transform: scale(1.05); // Légère mise en avant au survol
     }
   
@@ -72,4 +55,42 @@
       color: black;
     }
   }
+    
+  &_menu {
+    .menu  {// ul
+      display : flex;
+      flex-direction: row;
+      list-style-type: none;
+      align-items: center;
+      background-color: rgb(0, 255, 68);
+      text-decoration-color: black;
+      .error-404__link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0073aa;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .error-404__link--home:hover {
+        background-color: #005d87;
+    }
+      }
+      @media screen and (max-width: 800px) {
+          flex-direction: column;
+          gap: 40px;
+          padding-bottom: 2rem;
+      
+
+  }}
+
+  &_recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-decoration-color: gold;
+    text-decoration: underline;
+  }
+  
 }
