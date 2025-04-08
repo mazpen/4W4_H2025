@@ -57,7 +57,7 @@
                             // <div>${article.excerpt.rendered}</div>
                             articleElement.innerHTML = `
                                 <h3>${article.title.rendered}</h3>
-            
+                                p>${article.excerpt.rendered}</p>
                                 <a href="${article.link}">Lire plus</a>
                             `;
                             destinationList .appendChild(articleElement);

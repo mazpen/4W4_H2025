@@ -1,27 +1,24 @@
-<?php get_header(); ?>
-    <h1>-------- single-post.php ----------</h1>
+<?php
+/**
+ *  index.php est le modèle par défaut
+ *  si aucun modèle peut satisfaire la requête http dans ce cas c'est index.php qui affichera le contenu de la page
+ */
+?>
+<?php get_header() ?>
+<h1>single.php</h1>
     <section class="populaire">
         <div class="global">
-
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article>
-            <?php
-                if (has_post_thumbnail()) {
-                the_post_thumbnail('large'); }
-            ?>  
-                <h2><?php the_title(); ?></h2>
-                <div><?php the_content() ?>
-                <?php the_category(); ?>
-                <?php  $tableau = get_the_category(); 
-                // print_r ($tableau);
-                ?>
-                <p>Température maximum: <?php the_field('temperature_maximum') ?>&#176;C</p>
-                <p>Température minimum: <?php the_field('temperature_minimum') ?>&#176;C</p>
-                <p>Température moyenne: <?php the_field('temperature_moyenne') ?>&#176;C</p>
+            <article class="populaire__article">
+                <?php 
+                if (has_post_thumbnail())
+                the_post_thumbnail(); ?>
+                <h2 class="populaire__titre"><?php the_title(); ?></h2>
+                <div class="populaire__contenu"><?php the_content(); ?></div>
+            </article>
             <?php endwhile; endif; ?>
         </div>
     </section>
     <?php get_footer(); ?>
-   
 </body>
 </html>
