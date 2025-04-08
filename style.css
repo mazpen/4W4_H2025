@@ -137,6 +137,20 @@ Le composant .carte
   background-color: #0056b3;
 }
 
+.categorie__ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.categorie__ul__li {
+  border: 1px solid #aaa;
+  padding: 3px;
+  cursor: pointer;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */

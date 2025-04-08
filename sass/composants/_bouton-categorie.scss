@@ -1,0 +1,14 @@
+.categorie__ul {
+  display: flex;
+  gap: 2rem;;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  &__li{
+    border: 1px solid #aaa;
+    padding: 3px;
+    cursor: pointer;
+  }
+}   
