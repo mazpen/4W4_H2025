@@ -151,6 +151,32 @@ Le composant .carte
   cursor: pointer;
 }
 
+.destination {
+  border: 2px solid green;
+}
+.destination__titre {
+  border: 2px solid purple;
+}
+.destination__list {
+  border: 2px solid yellow;
+}
+
+.desti__titre {
+  border: 2px solid red;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.desti .active, .desti .desti__titre:hover {
+  background-color: rgba(48, 215, 109, 0.4745098039);
+}
+.desti__description {
+  padding: 0 18px;
+  background-color: rgba(34, 206, 126, 0.454);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -208,7 +234,6 @@ Les layouts
 }
 
 .hero {
-  background-image: url("images/maldives.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

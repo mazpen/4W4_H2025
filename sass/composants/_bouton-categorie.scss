@@ -12,3 +12,40 @@
     cursor: pointer;
   }
 }   
+
+.destination{
+
+  border: 2px solid green;
+  
+  &__titre{
+    border: 2px solid purple;
+  }
+
+  &__list{
+    border: 2px solid yellow;
+  }
+
+
+}
+
+.desti{
+  //accordeon
+  &__titre{
+    border: 2px solid red;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .active, .desti__titre:hover{
+    background-color: #30d76d79;
+  }
+  
+  //panel
+  &__description{
+    padding: 0 18px;
+    background-color: rgba(34, 206, 126, 0.454);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+}
