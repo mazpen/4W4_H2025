@@ -3,32 +3,17 @@
   gap:2rem;
   flex-wrap: wrap;
   list-style-type: none;
+  size: 0.8rem;
   &__li{
       border: 1px solid #aaa;
-      padding: 3px;
+      padding: 5px;
       cursor: pointer;
   }
-}
-
-.destination{
-
-  border: 2px solid green;
-  
-  &__titre{
-    border: 2px solid purple;
-  }
-
-  &__list{
-    border: 2px solid yellow;
-  }
-
-
 }
 
 .destination {
   &__description {
     padding: 0 18px;
-    background-color: rgba(34, 206, 126, 0.454);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
@@ -40,7 +25,6 @@
   }
 
   &__titre {
-    border: 2px solid red;
     cursor: pointer;
     transition: 0.4s;
   }
