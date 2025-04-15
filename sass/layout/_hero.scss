@@ -4,9 +4,36 @@
     background-size: cover; 
     background-position: center; 
     min-height: 100vh;
+
+    &__carrousel{
+        top:0;
+        left:0;
+        position : absolute;
+        background-repeat: no-repeat ;
+        min-height : 100vh;
+        width : 100%;
+        z-index: -1;
+        opacity: 0;
+        
+        &--active{
+            opacity: 1;
+        }
+    }
+
+
+
+    &__radio{
+        position: absolute;
+        width: 100%;
+        display: flex;
+
+    }
+
+
 }
 
 .hero__icone {
     display: flex;
     gap: 15px;
 }
+

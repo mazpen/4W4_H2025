@@ -1,17 +1,14 @@
 .categorie__ul {
-  display: flex;
-  gap: 2rem;;
+  display : flex;
+  gap:2rem;
   flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-
+  list-style-type: none;
   &__li{
-    border: 1px solid #aaa;
-    padding: 3px;
-    cursor: pointer;
+      border: 1px solid #aaa;
+      padding: 3px;
+      cursor: pointer;
   }
-}   
+}
 
 .destination{
 
@@ -35,10 +32,6 @@
     cursor: pointer;
     transition: 0.4s;
   }
-
-  .active, .desti__titre:hover{
-    background-color: #30d76d79;
-  }
   
   //panel
   &__description{
@@ -47,5 +40,9 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+  }
+
+  .chk{
+    
   }
 }

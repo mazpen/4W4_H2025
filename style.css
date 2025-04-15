@@ -141,9 +141,7 @@ Le composant .carte
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
 }
 .categorie__ul__li {
   border: 1px solid #aaa;
@@ -166,9 +164,6 @@ Le composant .carte
   cursor: pointer;
   transition: 0.4s;
 }
-.desti .active, .desti .desti__titre:hover {
-  background-color: rgba(48, 215, 109, 0.4745098039);
-}
 .desti__description {
   padding: 0 18px;
   background-color: rgba(34, 206, 126, 0.454);
@@ -176,7 +171,6 @@ Le composant .carte
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -238,6 +232,24 @@ Les layouts
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+.hero__carrousel {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.hero__carrousel--active {
+  opacity: 1;
+}
+.hero__radio {
+  position: absolute;
+  width: 100%;
+  display: flex;
 }
 
 .hero__icone {
@@ -321,6 +333,8 @@ footer {
 .boiteflex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .erreur404 {
