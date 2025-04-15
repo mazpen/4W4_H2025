@@ -159,18 +159,23 @@ Le composant .carte
   border: 2px solid yellow;
 }
 
-.desti__titre {
-  border: 2px solid red;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.desti__description {
+.destination__description {
   padding: 0 18px;
   background-color: rgba(34, 206, 126, 0.454);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
+.destination__description.open {
+  max-height: 500px;
+  padding: 10px 18px;
+}
+.destination__titre {
+  border: 2px solid red;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */

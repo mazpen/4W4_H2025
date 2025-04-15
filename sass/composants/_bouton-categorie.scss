@@ -25,24 +25,23 @@
 
 }
 
-.desti{
-  //accordeon
-  &__titre{
-    border: 2px solid red;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  //panel
-  &__description{
+.destination {
+  &__description {
     padding: 0 18px;
     background-color: rgba(34, 206, 126, 0.454);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+
+    &.open {
+        max-height: 500px; // adapte cette valeur si nécessaire
+        padding: 10px 18px;
+      }
   }
 
-  .chk{
-    
+  &__titre {
+    border: 2px solid red;
+    cursor: pointer;
+    transition: 0.4s;
   }
 }
