@@ -1,7 +1,8 @@
 # Étape 2
 ## Theme TP 4w4 - Introduction à un système de gestion de contenu
 ## Reproduction d'une maquette pour réaliser un carrousel animé
-Objectifs : Créer un carrousel animé dans la section « Hero »
+Objectifs : 
+Créer un carrousel animé dans la section « Hero »
 
 
 

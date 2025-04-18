@@ -7,9 +7,9 @@ $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title');
 ?>
 <section class="hero">
     <!-- hero__carrousel -->
-    <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[0] ?>');" checked="checked"></div>    
-    <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[1] ?>');" ></div> 
-    <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[2] ?>');" ></div> 
+    <div input type="radio" name="carrousel" class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[0] ?>');" checked="checked"></div>    
+    <div input type="radio" name="carrousel" class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[1] ?>');" ></div> 
+    <div input type="radio" name="carrousel" class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[2] ?>');" ></div> 
     
     <!-- hero__contenu -->
     <div class="hero__contenu global">
