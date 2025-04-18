@@ -14,7 +14,7 @@
     text-align: center;
     font-size: 70px;
     font-weight: bold;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 255, 255, 0.21);
     padding: 1rem;
     border-radius: 1rem;
   }
@@ -27,26 +27,24 @@
     font-size: 1.2rem;
     width: 70%;    
     //background-color: rgba(255, 255, 255, 0.21);
-    background-color: seagreen;
     padding: 1rem;
     border-radius: 1rem;
   }
   &_bouton-acceuil {
     font-size: 25px;
-    background-color: rgb(0, 81, 255);
+    background-color: rgb(255, 200, 0, 0.6);
     margin-top: 20px;
     padding: 1rem;
     border-radius: 1rem;
   
     a {
-      background-color: salmon;
       text-decoration: none;
-      color: white;
+      color: rgb(0, 0, 0);
       transition: color 0.3s ease; // Transition pour la couleur du texte
     }
   
     &:hover {
-      background-color: aquamarine;
+      background-color: rgb(255, 221, 127);
       //background-color: white;
       transform: scale(1.05); // Légère mise en avant au survol
     }
@@ -62,27 +60,25 @@
       flex-direction: row;
       list-style-type: none;
       align-items: center;
-      background-color: rgb(0, 255, 68);
       text-decoration-color: black;
-      .error-404__link {
+      .menu-item {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #0073aa;
-        color: white;
+        background-color: rgba(255, 200, 0, 0.6);
         text-decoration: none;
         border-radius: 5px;
     }
-    .error-404__link--home:hover {
-        background-color: #005d87;
+    .menu-item:hover {
+        background-color:rgb(255, 221, 127);
     }
-      }
+      
       @media screen and (max-width: 800px) {
           flex-direction: column;
           gap: 40px;
           padding-bottom: 2rem;
-      
-
-  }}
+      }}
+    
+  }
 
   &_recherche {
     display: flex;

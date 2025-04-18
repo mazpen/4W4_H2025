@@ -228,7 +228,7 @@ Les layouts
   min-height: 100vh;
 }
 .hero__carrousel {
-  top: 0;
+  top: 180px;
   left: 0;
   position: absolute;
   background-repeat: no-repeat;
@@ -242,8 +242,10 @@ Les layouts
 }
 .hero__radio {
   position: absolute;
-  width: 100%;
   display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 120%;
 }
 
 .hero__icone {
@@ -321,7 +323,6 @@ footer {
 
 .hero {
   min-height: 100vh;
-  background-image: url("images/maldives.jpg");
 }
 
 .boiteflex {
@@ -345,7 +346,7 @@ footer {
   text-align: center;
   font-size: 70px;
   font-weight: bold;
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 255, 255, 0.21);
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -356,25 +357,23 @@ footer {
   text-align: center;
   font-size: 1.2rem;
   width: 70%;
-  background-color: seagreen;
   padding: 1rem;
   border-radius: 1rem;
 }
 .erreur404_bouton-acceuil {
   font-size: 25px;
-  background-color: rgb(0, 81, 255);
+  background-color: rgba(255, 200, 0, 0.6);
   margin-top: 20px;
   padding: 1rem;
   border-radius: 1rem;
 }
 .erreur404_bouton-acceuil a {
-  background-color: salmon;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: color 0.3s ease;
 }
 .erreur404_bouton-acceuil:hover {
-  background-color: aquamarine;
+  background-color: rgb(255, 221, 127);
   transform: scale(1.05);
 }
 .erreur404_bouton-acceuil:hover a {
@@ -385,22 +384,20 @@ footer {
   flex-direction: row;
   list-style-type: none;
   align-items: center;
-  background-color: rgb(0, 255, 68);
   text-decoration-color: black;
 }
-.erreur404_menu .menu .error-404__link {
+.erreur404_menu .menu .menu-item {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #0073aa;
-  color: white;
+  background-color: rgba(255, 200, 0, 0.6);
   text-decoration: none;
   border-radius: 5px;
 }
-.erreur404_menu .menu .error-404__link--home:hover {
-  background-color: #005d87;
+.erreur404_menu .menu .menu-item:hover {
+  background-color: rgb(255, 221, 127);
 }
 @media screen and (max-width: 800px) {
-  .erreur404_menu {
+  .erreur404_menu .menu {
     flex-direction: column;
     gap: 40px;
     padding-bottom: 2rem;
