@@ -165,6 +165,10 @@ Le composant .carte
   transition: 0.4s;
 }
 
+.vague {
+  position: relative;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -410,4 +414,34 @@ footer {
   margin-top: 2rem;
   text-decoration-color: gold;
   text-decoration: underline;
+}
+
+/**
+Animation de la section hero
+*/
+.hero__animation {
+  /* tous les bloc sont invisible par défaut */
+  display: none;
+}
+.hero__animation--active {
+  /* Un seul bloc doit êtere visible pour  être animé */
+  display: block;
+}
+
+.hero__titre, .hero__description {
+  position: relative;
+  animation: anim_contenu 2s cubic-bezier(0.91, -0.59, 0.19, 1.59) forwards;
+}
+.hero__titre {
+  transform: translateY(-1000px);
+}
+.hero__description {
+  transform: translateX(-1500px);
+  animation-delay: 2s;
+}
+
+@keyframes anim_contenu {
+  100% {
+    transform: translate(0, 0);
+  }
 }
