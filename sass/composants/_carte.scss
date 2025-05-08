@@ -18,8 +18,10 @@ Le composant .carte
     padding: 20px;
   }
   &__image img {
-    width: 250px;
-    border-radius: 10px;
+    //width: 250px;
+    //border-radius: 10px;
+    max-width: 100%;
+    border-radius: 8px;
     flex-direction: row;
     margin: auto;
     padding: 5px;
@@ -60,6 +62,15 @@ Le composant .carte
 
     &:hover {
       background-color: #0056b3;
+    }
+  }
+
+  & .post-categories {
+    list-style-type: none;
+    display: flex;
+    gap : 3px;
+    a {
+      text-decoration: none;
     }
   }
 

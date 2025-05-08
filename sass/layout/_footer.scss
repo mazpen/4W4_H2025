@@ -32,39 +32,20 @@ footer{
                 flex-wrap: wrap;
             }
         }
-
-    }
-    &__s1{
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 3rem;      
+        &__s2{
+            &__externe {
+                display: flex;
+                flex : 0 0 20%;
+                padding-top: 50px;
+                justify-content: center;
     
-        &__adresse{
-            flex : 0 0 40%;
-            //&__coord{}
-            &__recherche{
-                size: 100px;
+                & .menu { //ul
+                    display : flex;
+                    flex-direction: row;
+                }
             }
         }
-        &__description{
-        display: flex;
-            flex:1 0 400px;
-            flex-wrap: wrap;
-        }
-    }
 
-    &__s2{
-        &__externe {
-            display: flex;
-            flex : 0 0 20%;
-            padding-top: 50px;
-            justify-content: center;
-
-            & .menu { //ul
-                display : flex;
-                flex-direction: row;
-            }
-        }
-    }
-  }
+    }    
+}
   

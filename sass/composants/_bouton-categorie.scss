@@ -5,9 +5,10 @@
   list-style-type: none;
   size: 0.8rem;
   &__li{
-      border: 1px solid #aaa;
-      padding: 5px;
-      cursor: pointer;
+    border: 1px solid #aaa;
+    padding: 5px;
+    cursor: pointer;
+    background-color: aquamarine;
   }
 }
 

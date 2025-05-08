@@ -18,6 +18,39 @@ Les variables
 /* /////////////////////////////////
 Les balise de bases
 //////////////////////////////////// */
+body {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 2.3vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+}
+
+h5 {
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+}
+
+h6 {
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 1.7vw, 1rem);
+}
+
 a {
   color: #5d5;
   text-decoration: none;
@@ -97,8 +130,8 @@ Le composant .carte
   padding: 20px;
 }
 .carte__image img {
-  width: 250px;
-  border-radius: 10px;
+  max-width: 100%;
+  border-radius: 8px;
   flex-direction: row;
   margin: auto;
   padding: 5px;
@@ -136,6 +169,14 @@ Le composant .carte
 .carte__bouton:hover {
   background-color: #0056b3;
 }
+.carte .post-categories {
+  list-style-type: none;
+  display: flex;
+  gap: 3px;
+}
+.carte .post-categories a {
+  text-decoration: none;
+}
 
 .categorie__ul {
   display: flex;
@@ -148,6 +189,7 @@ Le composant .carte
   border: 1px solid #aaa;
   padding: 5px;
   cursor: pointer;
+  background-color: aquamarine;
 }
 
 .destination__description {
@@ -290,32 +332,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-}
-.piedpage__s1 {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 3rem;
-}
-.piedpage__s1__adresse {
-  flex: 0 0 40%;
-}
-.piedpage__s1__adresse__recherche {
-  size: 100px;
-}
-.piedpage__s1__description {
-  display: flex;
-  flex: 1 0 400px;
-  flex-wrap: wrap;
-}
-.piedpage__s2__externe {
-  display: flex;
-  flex: 0 0 20%;
-  padding-top: 50px;
-  justify-content: center;
-}
-.piedpage__s2__externe .menu {
-  display: flex;
-  flex-direction: row;
+  .piedpage__s2__externe {
+    display: flex;
+    flex: 0 0 20%;
+    padding-top: 50px;
+    justify-content: center;
+  }
+  .piedpage__s2__externe .menu {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .global {
@@ -324,15 +350,16 @@ footer {
   padding: 10vh 5vw;
 }
 
-.hero {
-  min-height: 100vh;
-}
-
 .boiteflex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+}
+
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .erreur404 {
