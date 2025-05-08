@@ -226,18 +226,18 @@ Les layouts
 }
 
 .hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-.hero__carrousel {
-  top: 180px;
-  left: 0;
-  position: absolute;
+  position: relative;
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
+}
+.hero__carrousel {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
   opacity: 0;
 }
@@ -246,15 +246,14 @@ Les layouts
 }
 .hero__radio {
   position: absolute;
-  display: flex;
   width: 100%;
-  justify-content: center;
-  top: 120%;
-}
-
-.hero__icone {
+  bottom: 0;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero__contenu {
+  z-index: 9;
 }
 
 /*
@@ -418,29 +417,30 @@ footer {
 
 /**
 Animation de la section hero
+Référence https://css-tricks.com/almanac/properties/a/animation/
+
 */
 .hero__animation {
-  /* tous les bloc sont invisible par défaut */
   display: none;
 }
 .hero__animation--active {
-  /* Un seul bloc doit êtere visible pour  être animé */
   display: block;
 }
-
-.hero__titre, .hero__description {
+.hero__animation--active .hero__titre, .hero__animation--active .hero__description {
   position: relative;
-  animation: anim_contenu 2s cubic-bezier(0.91, -0.59, 0.19, 1.59) forwards;
+  animation: contenu cubic-bezier(0.53, -0.8, 0.44, 1.64) 1s forwards;
 }
+
 .hero__titre {
   transform: translateY(-1000px);
 }
+
 .hero__description {
-  transform: translateX(-1500px);
+  transform: translateX(-1000px);
   animation-delay: 2s;
 }
 
-@keyframes anim_contenu {
+@keyframes contenu {
   100% {
     transform: translate(0, 0);
   }
