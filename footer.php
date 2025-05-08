@@ -2,7 +2,7 @@
     $footer_mission = get_theme_mod('footer_mission', 'Default Title');
     $footer_couleur_arriere = get_theme_mod('footer_couleur_arriere', '#ec880d');
     /* permet d'afficher une avant le footer */
-    vague($footer_couleur_arriere)
+    vague($footer_couleur_arriere);
 ?>
 
 <footer style="background-color: <?= $footer_couleur_arriere ?> ">
