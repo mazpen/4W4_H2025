@@ -328,19 +328,31 @@ footer {
   .piedpage__s1__adresse {
     flex: 0 0 40%;
   }
-  .piedpage__s1__description {
+  .piedpage__s1__adresse__description {
     display: flex;
     flex-wrap: wrap;
   }
-  .piedpage__s2__externe {
+  .piedpage__s1__adresse__coord {
     display: flex;
-    flex: 0 0 20%;
-    padding-top: 50px;
-    justify-content: center;
+    flex-wrap: wrap;
   }
-  .piedpage__s2__externe .menu {
+  .piedpage__s1__adresse__recherche {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .piedpage__s2 {
+    display: flex;
+    /*&__externe {
+        display: flex;
+        flex : 0 0 20%;
+        padding-top: 50px;
+        justify-content: center;
+
+        & .menu { //ul
+            display : flex;
+            flex-direction: row;
+        }
+    }*/
   }
 }
 

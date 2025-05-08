@@ -26,14 +26,25 @@ footer{
         
             &__adresse{
                 flex : 0 0 40%;
-            }
-            &__description{
-                display: flex;
-                flex-wrap: wrap;
+                &__description{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                &__coord{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                }
+                &__recherche{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
             }
         }
         &__s2{
-            &__externe {
+            display: flex;
+            /*&__externe {
                 display: flex;
                 flex : 0 0 20%;
                 padding-top: 50px;
@@ -43,7 +54,7 @@ footer{
                     display : flex;
                     flex-direction: row;
                 }
-            }
+            }*/
         }
 
     }    

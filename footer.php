@@ -25,7 +25,7 @@
                     <?php get_search_form();   ?>
                 </div>
             </div>
-            <div class="piedpage__s1__description">
+            <div class="piedpage__s1__mission">
                 <?php echo $footer_mission; ?>
             </div>
         </section>
