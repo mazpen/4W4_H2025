@@ -14,8 +14,8 @@
         <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
         <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Suite</a>
             <?php the_category() ?>
-        <p>Température minimum&nbsp;<?php// echo the_field ('temperature_minimum'); ?>&#xB0;C</p>
-        <p>Température maximum&nbsp;<?php// echo the_field ('temperature_maximum'); ?>&#xB0;C</p>
-        <p>Température moyenne&nbsp;<?php// echo the_field ('temperature_moyenne'); ?>&#xB0;C</p>
+        <p>Température maximum&nbsp;<?php echo the_field ('temperature_max'); ?>&#xB0;C</p>
+        <p>Température minimum&nbsp;<?php echo the_field ('temperature_min'); ?>&#xB0;C</p>
+        <p>Température moyenne&nbsp;<?php echo the_field ('temperature_moy'); ?>&#xB0;C</p>
     </div>
 </article>
