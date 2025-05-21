@@ -1,16 +1,15 @@
-/*
-  --------------------------------- Layout du pied de page
-*/
 
-footer{
-    background-color: rgb(236, 136, 13);
+
+.footer{
+    background-color: $footer_couleur_arriere;
     color : #000;
     display: flex;
   }
 
 .footer-image-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 7px;
+    background-color: $footer_couleur_arriere;
 }
 
 .footer-image {

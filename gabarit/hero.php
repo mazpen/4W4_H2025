@@ -18,17 +18,19 @@ $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title');
         <script>
             console.log("test inline JS OK");
         </script>
-    <!-- hero__contenu -->
-    <div class="hero__contenu global">
-        <h1 class="hero__titre">
-            <?php  bloginfo('name'); ?>
-        </h1>
-        <p class="hero__description">
-        <?php  bloginfo('description'); ?>
+
+
+
+
+<div class="hero__contenu global">
+        <div class="hero__animation hero__animation--active">
+            <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+            <p class="hero__description"><?php bloginfo('description'); ?></p>
+        </div>
+
+        <p class="hero__courriel">
+        <?php bloginfo('admin_email'); ?>
         </p>
-        <a href="" class="hero__courriel">
-            info@cmaisonneuve.qc.ca
-        </a>
         <button class="hero__bouton">
             Inscription
         </button>

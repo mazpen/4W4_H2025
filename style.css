@@ -158,8 +158,13 @@ Le composant .carte
   size: 0.8rem;
 }
 .categorie__ul__li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  background: rgba(252, 141, 30, 0.3882352941);
+  border-radius: 15px;
   border: 1px solid #aaa;
-  padding: 5px;
   cursor: pointer;
 }
 
@@ -244,6 +249,14 @@ Les layouts
   background-position: center;
   min-height: 100vh;
 }
+.hero__bouton {
+  display: flex;
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  background: rgba(48, 173, 33, 0.3882352941);
+}
 .hero__carrousel {
   top: 180px;
   left: 0;
@@ -265,23 +278,22 @@ Les layouts
   top: 120%;
 }
 
-.hero__icone {
+.hero__icone-app {
   display: flex;
+  padding-top: 5px;
   gap: 15px;
 }
 
-/*
-  --------------------------------- Layout du pied de page
-*/
-footer {
-  background-color: rgb(236, 136, 13);
+.footer {
+  background-color: #ec880d;
   color: #000;
   display: flex;
 }
 
 .footer-image-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 7px;
+  background-color: #ec880d;
 }
 
 .footer-image {

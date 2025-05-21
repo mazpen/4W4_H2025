@@ -102,6 +102,18 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer
   'section' => 'footer_section',
 )));
 
+///////// Image dans le footer 
+$wp_customize->add_setting('footer_image', array(
+  'default' => '',
+  'sanitize_callback' => 'absint',
+));
+
+$wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'footer_image', array(
+  'label' => __('Image de destination pour le pied de page', 'theme_TP4w4'),
+  'section' => 'footer_section',
+  'mime_type' => 'image',
+)));
+
 ////////// ERREUR 404 ///////////////////
 // Création d'une nouvelle section dans le customizer
 $wp_customize->add_section('erreur_404_section', array(

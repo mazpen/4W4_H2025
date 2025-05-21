@@ -7,6 +7,18 @@
     vague($footer_couleur_arriere);
 ?>
 
+<!-- Footer Image -->
+<?php
+        $image_id = get_theme_mod('footer_image');
+
+        if ($image_id) {
+            echo '<div class="footer-image-container">';
+            echo wp_get_attachment_image($image_id, 'medium', false, array('class' => 'footer-image'));
+            echo '</div>';
+        }
+        
+    ?>
+
 <footer style="background-color: <?= $footer_couleur_arriere ?> ">
     
     <div class="piedpage global">

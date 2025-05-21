@@ -3,7 +3,14 @@
     background-size: cover; 
     background-position: center; 
     min-height: 100vh;
-
+    &__bouton{
+        display: flex;
+        margin: 20px;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        background: #30ad2163;
+    }
     &__carrousel{
         top:180px;
         left:0;
@@ -30,8 +37,9 @@
 
 }
 
-.hero__icone {
+.hero__icone-app {
     display: flex;
+    padding-top: 5px;
     gap: 15px;
 }
 

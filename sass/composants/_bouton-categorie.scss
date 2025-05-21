@@ -5,9 +5,16 @@
   list-style-type: none;
   size: 0.8rem;
   &__li{
+      
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 10px;
+      background: #fc8d1e63;
+      border-radius: 15px;
       border: 1px solid #aaa;
-      padding: 5px;
       cursor: pointer;
+      
   }
 }
 

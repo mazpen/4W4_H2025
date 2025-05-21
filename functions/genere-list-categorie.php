@@ -18,13 +18,14 @@ function categories_liste($parent_slug){
     if (!empty($sous_categories)) {
         echo '<ul class="categorie__ul">';
         foreach ($sous_categories as $categorie) {
-        // Exclure la catégorie nommée "Populaire" et "uncategorized"
-        if (strtolower($categorie->name) === 'populaire') continue;
-        if (strtolower($categorie->name) === 'uncategorized') continue;
 
-        echo '<li data-category-id="' . esc_attr($categorie->term_id) . '" class="categorie__ul__li">';
-        echo esc_html($categorie->name);
-        echo '</li>';
+             // Exclure la catégorie nommée "Populaire"
+        if (strtolower($categorie->name) === 'populaire') continue;
+         // Exclure la catégorie nommée "uncategorized"
+         if (strtolower($categorie->name) === 'uncategorized') continue;
+
+        // Afficher le nom de chaque sous-catégorie
+            echo '<li  data-id="'.esc_html($categorie->term_id).'" class="categorie__ul__li">'.esc_html($categorie->name).'</li>';
         }
         echo '</ul>';
     } 
