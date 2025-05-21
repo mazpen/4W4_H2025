@@ -7,56 +7,72 @@ footer{
     color : #000;
     display: flex;
   }
-  
+
+.footer-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+}  
+
 .piedpage{
     display: flex;
     padding: 30px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    @media screen and (max-width: $point__rupture){
-        display: flex;
-        flex-direction: row;
-
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;    
+    .global{
+        padding: 15px;
         &__s1{
             display: flex;
             flex-wrap: wrap;
-            gap: 3rem;      
-        
-            &__adresse{
-                flex : 0 0 40%;
-                &__description{
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                &__coord{
-                    display: flex;
-                    flex-wrap: wrap;
-
-                }
-                &__recherche{
-                    display: flex;
-                    flex-wrap: wrap;
-                }
+            flex-direction: column;
+            padding: 15px;
+            .titre{
+                font-size: 17px;
+                margin-bottom: 2rem;
             }
+            &__externe{
+                display: flex;
+                flex-wrap: wrap;
+            }            
         }
         &__s2{
             display: flex;
-            /*&__externe {
+            flex-direction: column;
+            padding: 15px;
+            .titre{
+                font-size: 17px;
+                margin-bottom: 2rem;
+            }
+            &__adresse{
                 display: flex;
-                flex : 0 0 20%;
-                padding-top: 50px;
-                justify-content: center;
-    
-                & .menu { //ul
-                    display : flex;
-                    flex-direction: row;
-                }
-            }*/
+                flex-direction: column;
+            }
         }
 
-    }    
-}
+        &__s3{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            .titre{
+                font-size: 17px;
+                margin-bottom: 2rem;
+            }
+            &__mission{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    
+
+}    
+
   

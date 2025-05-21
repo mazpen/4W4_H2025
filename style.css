@@ -23,34 +23,6 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-h1 {
-  font-size: clamp(2rem, 3vw, 5rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(1rem, 2.3vw, 2rem);
-}
-
-h4 {
-  font-size: clamp(0.9rem, 2vw, 1.5rem);
-}
-
-h5 {
-  font-size: clamp(0.9rem, 2vw, 1.3rem);
-}
-
-h6 {
-  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
-}
-
-p {
-  font-size: clamp(0.8rem, 1.7vw, 1rem);
-}
-
 a {
   color: #5d5;
   text-decoration: none;
@@ -307,53 +279,68 @@ footer {
   display: flex;
 }
 
+.footer-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-image {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;
+}
+
 .piedpage {
   display: flex;
   padding: 30px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
 }
-@media screen and (max-width: 700px) {
-  .piedpage {
-    display: flex;
-    flex-direction: row;
-  }
-  .piedpage__s1 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-  .piedpage__s1__adresse {
-    flex: 0 0 40%;
-  }
-  .piedpage__s1__adresse__description {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .piedpage__s1__adresse__coord {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .piedpage__s1__adresse__recherche {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .piedpage__s2 {
-    display: flex;
-    /*&__externe {
-        display: flex;
-        flex : 0 0 20%;
-        padding-top: 50px;
-        justify-content: center;
-
-        & .menu { //ul
-            display : flex;
-            flex-direction: row;
-        }
-    }*/
-  }
+.piedpage .global {
+  padding: 15px;
+}
+.piedpage .global__s1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 15px;
+}
+.piedpage .global__s1 .titre {
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+.piedpage .global__s1__externe {
+  display: flex;
+  flex-wrap: wrap;
+}
+.piedpage .global__s2 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.piedpage .global__s2 .titre {
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+.piedpage .global__s2__adresse {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage .global__s3 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.piedpage .global__s3 .titre {
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+.piedpage .global__s3__mission {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .global {

@@ -1,30 +1,38 @@
-(function(){
-    console.log("carrousel.js")
-    let hero__radio__input = document.querySelectorAll(".hero__radio__input")
-    let hero__carrousel = document.querySelectorAll(".hero__carrousel")
-    let hero__animation = document.querySelectorAll(".hero__animation")
-    console.log(hero__carrousel.length)
-    console.log("hero__radio__input = " , hero__radio__input.length)
-    hero__radio__input.forEach((radio) =>{
-        radio.addEventListener('mousedown',function(){
-            parcourir_carrousel()
-            parcourir_animation()
-            console.log(radio.dataset.id_radio) 
-            hero__carrousel[radio.dataset.id_radio].classList.add("hero__carrousel--active")
-            hero__animation[radio.dataset.id_radio].classList.add("hero__animation--active")
-        })
-    })
-    
-    function parcourir_carrousel(){
-        hero__carrousel.forEach(element => {
-            element.classList.remove("hero__carrousel--active")
+(function () {
+    console.log("carrousel.js chargé");
+
+    const radios = document.querySelectorAll(".hero__radio__input"); 
+    const slides = document.querySelectorAll(".hero__carrousel");    
+    let currentIndex = 0; 
+
+    // Fonction pour mettre à jour l'affichage du carrousel
+    function updateCarrousel(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("hero__carrousel--active");
+
+            if (i === index) {
+                slide.classList.add("hero__carrousel--active");
+                radios[i].checked = true;
+            }
         });
+
+        // Met à jour l'index courant
+        currentIndex = index;
     }
-    
-    function parcourir_animation(){
-        hero__animation.forEach(element => {
-            element.classList.remove("hero__animation--active")
+
+    // Ajoute un événement à chaque bouton radio
+    radios.forEach((radio, index) => {
+        radio.addEventListener("change", () => {
+            updateCarrousel(index); 
         });
-    }
-    
-    })()
+    });
+
+    // Animation automatique toutes les 5 secondes (1 point)
+    setInterval(() => {
+        const nextIndex = (currentIndex + 1) % slides.length; 
+        updateCarrousel(nextIndex);
+    }, 5000);
+
+    // Démarre sur la première image au chargement
+    updateCarrousel(0);
+})();

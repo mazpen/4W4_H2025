@@ -73,7 +73,7 @@ $wp_customize->add_setting('footer_telephone', array(
   'sanitize_callback' => 'sanitize_text_field'
 ));
 ////////// ajout du controle de la donnée
-$wp_customize->add_control('footer_telephone', array(
+$wp_customize->add_control('footer_phone', array(
   'label' => __('Footer Téléphone', 'theme_TP4w4'),
   'section' => 'footer_section',
   'type' => 'text',
