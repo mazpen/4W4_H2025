@@ -2,9 +2,9 @@
     $footer_mission = get_theme_mod('footer_mission', 'Default Title');
     $footer_adresse = get_theme_mod('footer_adresse', 'Default Address');
     $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
-    $footer_couleur_arriere = get_theme_mod('footer_couleur_arriere', '#ec880d');
+    $footer_couleur_bas = get_theme_mod('footer_couleur_arriere', '#ec880d');
     /* permet d'afficher une avant le footer */
-    vague($footer_couleur_arriere);
+    vague($footer_couleur_bas);
 ?>
 
 <!-- Footer Image -->

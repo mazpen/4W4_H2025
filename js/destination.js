@@ -63,13 +63,26 @@
                 // Boucle sur les articles reçus
                 data.forEach(article => {
                     const articleElement = document.createElement('div');
+
+                     // Vérifie la méthode choisie ("search" ou "categories")
+                    if (method === "search") {
+                        // Affichage pour la recherche (search)
+                        articleElement.innerHTML = `
+                            <h3 class="destination__titre">${article.title.rendered} ...</h3>
+                            <div class="destination__description">
+                                <p>${article.excerpt.rendered}</p>
+                            </div>
+                        `;
+                        
+                    }else if (method === "categories") {
+                    // Affichage pour categories (categories)
                     articleElement.innerHTML = `
                         <h3 class="destination__titre">${article.title.rendered}</h3>
                         <div class="destination__description">
                             <p>${article.excerpt.rendered}</p>
                         </div>
                         <a href="${article.link}">Lire plus</a>
-                    `;
+                    `;}
 
                     // Ajoute l'événement pour l'accordéon
                     const titre = articleElement.querySelector('.destination__titre');
@@ -83,11 +96,6 @@
                 });
             })
             .catch(error => console.error('Erreur lors de la récupération des articles:', error));
-
-
-
-
-
 
         }
 

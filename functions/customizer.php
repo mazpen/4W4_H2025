@@ -48,6 +48,16 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_c
   'section' => 'hero_section',
 )));
 
+$wp_customize->add_setting('vague_pays_couleur', array(
+  'default' => '#91e4a0',
+  'sanitize_callback' => 'esc_url_raw',
+));
+
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'vague_pays_couleur', array(
+  'label' => __('Couleur Vague Pays', 'theme_TP4w4'),
+  'section' => 'hero_section',
+)));
+
 ////////// Nouvelle section footer /////////////////////////
 // Création d'une nouvelle section dans le customizer
 $wp_customize->add_section('footer_section', array(
@@ -101,6 +111,8 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer
   'label' => __('Couleur arriere-plan', 'theme_TP4w4'),
   'section' => 'footer_section',
 )));
+
+
 
 ///////// Image dans le footer 
 $wp_customize->add_setting('footer_image', array(

@@ -1,7 +1,7 @@
 
 
 .footer{
-    background-color: $footer_couleur_arriere;
+    background-color: $footer_couleur_bas;
     color : #000;
     display: flex;
   }
@@ -9,7 +9,7 @@
 .footer-image-container {
     text-align: center;
     margin-top: 7px;
-    background-color: $footer_couleur_arriere;
+    background-color: $footer_couleur_bas;
 }
 
 .footer-image {

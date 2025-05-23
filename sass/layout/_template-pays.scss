@@ -1,20 +1,24 @@
-.pays__article{
-background-color: aquamarine;
-}
-.pays__titre{
-background-color: blueviolet;
-}
-.pays__contenu{
-background-color: cadetblue;
-}
+
 
 
 .destination__pays{
-    background-color: blanchedalmond;
+    background-color: #91e4a0;
     &__titre__pays{
-        background-color: cornflowerblue;
+        background-color: rgb(0, 39, 112);
     }
-    &__list__pays{
-    background-color: darkmagenta;
+}
+
+.boutons__pays{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .btn-pays{
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
     }
+    
 }
