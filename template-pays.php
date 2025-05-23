@@ -19,7 +19,6 @@ get_header(); ?>
 
 
                 <p>Le conférencier est : <?php the_field('conferencier_pays') ?></p>
-                <p>description: <?php the_field('description_pays') ?></p>
                 <p>Date et heure: <?php the_field('date_pays'); ?>
                 <p>Lieu: <?php the_field('lieu_pays')?></p>
 
