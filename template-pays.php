@@ -24,13 +24,27 @@ Template Name: Pays
             </article>
 
             <!-- //////////////////////////////////// section destination REST-API -->
-            <?php vague($footer_couleur_arriere);?>
-            <?php categories_liste("destination"); ?>
+            <section>
+            <?php //vague($footer_couleur_arriere);?>
+            <?php $pays = ["France", "États-Unis", "Canada", "Argentine", "Chili", "Belgique", "Maroc", "Mexique", "Japon", "Italie", "Islande", "Chine", "Grèce", "Suisse"]; ?>
+
+            <div class="boutons__pays">
+                <?php foreach ($pays as $nom): ?>
+                    <button 
+                        class="btn-pays" 
+                        data-pays="<?= htmlspecialchars($nom) ?>">
+                        <?= htmlspecialchars($nom) ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+
             <section class="destination__pays">
                 <h2 class="destination__titre__pays">Destination par pays</h2>
-                <div <?php //date($methode = $categories)?> class="destination__list__pays"></div>
+                <div id="api-wrapper" data-method="search" data-value="France" class="destination__list .pays"></div>
             </section>
+
             <?php endwhile; endif; ?>
+            </section>
         </div>
     </section>
 <?php get_footer(); ?>

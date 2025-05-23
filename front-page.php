@@ -23,7 +23,7 @@
     <?php categories_liste("destination"); ?>
     <section class="destination">
         <h2 class="destination__titre">Articles de la catégorie</h2>
-        <div <?php //date($methode = $categories)?> class="destination__list"></div>
+        <div id="api-wrapper" data-method="categories" data-value="<?php $categoryId?>" class="destination__list"></div>
     </section>
     <?php get_footer(); ?>
 </body>
