@@ -1,8 +1,7 @@
-# Étape 2
-## Theme TP 4w4 - Introduction à un système de gestion de contenu
-## Reproduction d'une maquette pour réaliser un carrousel animé
-Objectifs : 
-Créer un carrousel animé dans la section « Hero »
+# TP2
+## Theme TP 4W4 : Création d’un site WordPress pour un club de voyage
+### Objectifs du TP2
+L’objectif de cette dernière étape est d’enrichir le site en ajoutant de nouvelles fonctionnalités, d’adapter celles déjà en place, tout en améliorant le design, l’adaptabilité aux différents formats d’écran et l’intégration générale du site.
 
 
 
