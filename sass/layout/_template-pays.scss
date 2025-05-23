@@ -1,0 +1,20 @@
+.pays__article{
+background-color: aquamarine;
+}
+.pays__titre{
+background-color: blueviolet;
+}
+.pays__contenu{
+background-color: cadetblue;
+}
+
+
+.destination__pays{
+    background-color: blanchedalmond;
+    &__titre__pays{
+        background-color: cornflowerblue;
+    }
+    &__list__pays{
+    background-color: darkmagenta;
+    }
+}

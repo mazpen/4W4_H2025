@@ -483,3 +483,24 @@ Référence https://css-tricks.com/almanac/properties/a/animation/
     transform: translate(0, 0);
   }
 }
+.pays__article {
+  background-color: aquamarine;
+}
+
+.pays__titre {
+  background-color: blueviolet;
+}
+
+.pays__contenu {
+  background-color: cadetblue;
+}
+
+.destination__pays {
+  background-color: blanchedalmond;
+}
+.destination__pays__titre__pays {
+  background-color: cornflowerblue;
+}
+.destination__pays__list__pays {
+  background-color: darkmagenta;
+}
