@@ -4,7 +4,7 @@
     $footer_telephone = get_theme_mod('footer_telephone', 'Default Phone');
     $footer_couleur_bas = get_theme_mod('footer_couleur_arriere', '#ec880d');
     /* permet d'afficher une avant le footer */
-    vague($footer_couleur_bas);
+    vague_footer_Haut($footer_couleur_bas);
 ?>
 
 <!-- Footer Image -->
